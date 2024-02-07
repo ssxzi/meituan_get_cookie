@@ -1,2 +1,6 @@
 目前仅支持Microsoft Edge
-![image](https://github.com/ssxzi/meituan_get_cookie/assets/42813459/3be28613-f7bd-45f5-ace4-8141e277ef25)
+
+开发环境：
+Python310
+
+![meituan](https://github.com/ssxzi/meituan_get_cookie/assets/42813459/9d7586f2-72f4-4679-a064-8b2daf6178be)
