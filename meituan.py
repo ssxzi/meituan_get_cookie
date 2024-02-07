@@ -52,7 +52,7 @@ class GetToken:
         # 设置窗口图形界面
         self.ui = QUiLoader().load('src/meituan.ui')
         self.ui.button_url.clicked.connect(self.open_url)
-        self.ui.button_token.clicked.connect(self.cope_cookie)
+        self.ui.button_cope.clicked.connect(self.cope_cookie)
 
 
 app = QApplication()
