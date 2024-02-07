@@ -83,6 +83,9 @@
        <property name="text">
         <string>点击打开网页，登录后点击复制Cookie。</string>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
       </widget>
      </item>
     </layout>

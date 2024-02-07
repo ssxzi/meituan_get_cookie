@@ -5,9 +5,15 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from threading import Thread
 
 
 class GetToken:
+
+    # 启用多线程
+    def thread(self):
+        thread = Thread(target=self.open_url)
+        thread.start()
 
     def open_url(self):
         # 设置为手机模式
@@ -51,7 +57,7 @@ class GetToken:
     def __init__(self):
         # 设置窗口图形界面
         self.ui = QUiLoader().load('src/meituan.ui')
-        self.ui.button_url.clicked.connect(self.open_url)
+        self.ui.button_url.clicked.connect(self.thread)
         self.ui.button_cope.clicked.connect(self.cope_cookie)
 
 
